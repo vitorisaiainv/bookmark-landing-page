@@ -106,7 +106,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 5.5rem;
+  margin: 0 2rem;
 }
 
 .button {
