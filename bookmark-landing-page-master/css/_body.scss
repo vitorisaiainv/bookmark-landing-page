@@ -2,12 +2,22 @@ body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
     font-size: 1.125rem;
+    color: $veryDarkBlue;
+}
+
+ol, ul, li {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 p {
     line-height: 1.5;
     color: $grayishBlue;
 }
+
+
 
 .wrapper {
     margin: $refMargin;
@@ -68,11 +78,12 @@ p {
 
 .button {
     font: inherit;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: 0;
     border-radius: 5px; 
     font-weight: 500;
-    padding: 0.9rem 1.1rem;
+    padding: 0.9rem 1rem;
+    box-shadow: 0px 3px 4px 1px #dad9d9;
 }
 
 .mediumBlueButton {
@@ -82,10 +93,48 @@ p {
 
 
 .mediumLightButton {   
-    background-color: #F2F2F2;
-    color: $veryDarkBlue;    
+    background-color: #F2F2F2;       
 }
 
 .defaultSpace {
     height: 10rem;
+}
+
+.halfSpace {
+    height: 5rem;
+}
+
+
+.features {
+    & li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: solid 1px #dad9d9;
+        padding: 1rem 1rem;
+        position: relative;
+
+        &:last-child {
+            border-bottom: solid 1px #dad9d9;
+        }
+
+        &:first-child::after {
+            position: absolute;
+            height: 4px;          
+            border-radius: 1px;
+            width: 140px;
+            background-color: $softRed;
+            bottom: 0px;
+            content: "";
+            box-shadow: 0px 3px 4px 1px #dad9d9;
+            // width: 80%;
+            // background: $softBlue;
+            // border-radius: 0 0 35% 0;
+            // position: absolute;
+            // left: 0;
+            // height: 85%;
+            // top: 20%;
+            // z-index: -1;
+        }
+    }
 }
