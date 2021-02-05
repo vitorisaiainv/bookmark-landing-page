@@ -1,24 +1,3 @@
-body {
-    margin: 0;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.125rem;
-    color: $veryDarkBlue;
-}
-
-ol, ul, li {
-    list-style: none;
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
-p {
-    line-height: 1.5;
-    color: $grayishBlue;
-}
-
-
-
 .wrapper {
     margin: $refMargin;
 }
@@ -86,13 +65,27 @@ p {
     box-shadow: 0px 3px 4px 1px #dad9d9;
 }
 
-.mediumBlueButton {
+.blueButton {
     background-color: $softBlue;
     color: white;  
 }
 
+.redButton {
+    background-color: $softRed;
+    color: white;  
+}
 
-.mediumLightButton {   
+.largeButton {
+    padding: 0.9rem 1.4rem;
+}
+
+.fullButton {
+    padding: 0.9rem 1.4rem;
+    width: 100%;
+    box-shadow: none;
+}
+
+.lightButton {   
     background-color: #F2F2F2;       
 }
 
@@ -130,3 +123,114 @@ p {
         }
     }
 }
+
+.browserCard {
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px 1px #dad9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+
+        &:last-child {
+            background-image: url(../images/bg-dots.svg);
+            background-repeat: repeat no-repeat;
+            background-position-y: 0;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+
+        & img {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.simpleCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.firstFooter {
+    padding: 2.7rem 0;
+    background-color: $softBlue;
+    color: white;
+
+    & span {
+        display: flex;
+        justify-content: center;
+        &:first-child {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.22rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+    }
+
+    & h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    & input {
+        font: inherit;
+        font-size: 0.9rem;
+        border: 0;
+        border-radius: 5px; 
+        font-weight: 500;
+        padding: 0.9rem 1rem;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        &::placeholder {
+            color: #dad9d9;
+            
+        }
+    }
+}
+
+.secondFooter {  
+    padding: 2.7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $veryDarkBlue;
+
+    
+    & div {
+        & span {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.1rem;
+            color: white;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 1.9rem;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    & img:first-child {
+        margin-right: 2.3rem;
+    }
+}
+

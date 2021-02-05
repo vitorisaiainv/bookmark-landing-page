@@ -1,3 +1,22 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.125rem;
+    color: $veryDarkBlue;
+}
+
+ol, ul, li {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+p {
+    line-height: 1.5;
+    color: $grayishBlue;
+}
+
 h1 {
     font-size: 2.5rem;
     font-weight: 500;
@@ -6,6 +25,12 @@ h1 {
 
 h2 {
     font-size: 1.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.4rem;
     font-weight: 500;
     margin: 0;
 }
